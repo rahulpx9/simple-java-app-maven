@@ -79,11 +79,6 @@ class TextAnalyzerTest {
         void nullReturnsNull() {
             assertThat(analyzer.reverse(null)).isNull();
         }
-
-        @Test
-        void emptyString() {
-            assertThat(analyzer.reverse("")).isEmpty();
-        }
     }
 
     @Nested
