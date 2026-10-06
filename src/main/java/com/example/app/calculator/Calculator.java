@@ -11,7 +11,7 @@ public class Calculator {
     private static final int DEFAULT_SCALE = 10;
 
     public int add(int a, int b) {
-        return a + b;
+        return Math.addExact(a, b);
     }
 
     public int subtract(int a, int b) {
