@@ -185,6 +185,12 @@ class CalculatorTest {
         }
 
         @Test
+        void oneExponentReturnsBase() {
+            assertThat(calculator.power(new BigDecimal("42"), 1))
+                    .isEqualByComparingTo(new BigDecimal("42"));
+        }
+
+        @Test
         void rejectsNegativeExponent() {
             assertThatThrownBy(() -> calculator.power(BigDecimal.TEN, -1))
                     .isInstanceOf(IllegalArgumentException.class);
