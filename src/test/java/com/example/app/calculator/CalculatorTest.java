@@ -32,6 +32,7 @@ class CalculatorTest {
                 "0, 0, 0",
                 "1, 2, 3",
                 "-1, 1, 0",
+                "10, 20, 30",
                 "2147483646, 1, 2147483647"
         })
         void addsIntegers(int a, int b, int expected) {
